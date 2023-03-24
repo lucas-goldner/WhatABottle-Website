@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 
 export const WaterBottle = (props: JSX.IntrinsicElements["group"]) => {
-  const ref = useRef();
+  const ref = useRef(new THREE.Group());
   const { nodes } = useGLTF("./water_bottle.glb") as GLTFResult;
 
   const blueMetallicMaterial = new THREE.MeshStandardMaterial({

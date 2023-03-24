@@ -6,7 +6,7 @@ import {
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import HoveringImages from "../hero/images";
+import HoveringImages from "../hero/HoveringImages";
 
 const Hero = () => {
   return (

@@ -1,26 +1,29 @@
 import { useScroll } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useRef } from "react";
-import HoveringImage from "./image";
+import HoveringImage from "./HoverImage";
 import { WaterBottle } from "./WaterBottle";
+import * as THREE from "three";
+import { HoverImageMaterial } from "../../types/HoverImageMaterial";
 
 const HoveringImages = () => {
   const { width, height } = useThree((state) => state.viewport);
   const data = useScroll();
-  const group = useRef();
+  const group = useRef(new THREE.Group());
+
   useFrame(() => {
-    group.current.children[0].material.zoom = 1 + data.range(0, 1 / 2) / 2;
-    group.current.children[1].material.zoom = 1 + data.range(0, 1 / 3) / 3;
-    group.current.children[2].material.zoom =
-      1 + data.range(1.15 / 3, 1 / 3) / 3;
-    group.current.children[4].material.zoom =
-      1 + data.range(1.15 / 3, 1 / 3) / 2;
-    group.current.children[5].material.zoom =
-      1 + data.range(1.25 / 3, 1 / 3) / 1;
-    group.current.children[6].material.zoom =
-      1 + data.range(1.8 / 3, 1 / 3) / 3;
-    group.current.children[6].material.grayscale =
-      1 - data.range(1.6 / 3, 1 / 3);
+    const children = group.current.children as THREE.Mesh<
+      THREE.BufferGeometry,
+      HoverImageMaterial
+    >[];
+
+    children[0].material.zoom = 1 + data.range(0, 1 / 2) / 2;
+    children[1].material.zoom = 1 + data.range(0, 1 / 3) / 3;
+    children[2].material.zoom = 1 + data.range(1.15 / 3, 1 / 3) / 3;
+    children[4].material.zoom = 1 + data.range(1.15 / 3, 1 / 3) / 2;
+    children[5].material.zoom = 1 + data.range(1.25 / 3, 1 / 3) / 1;
+    children[6].material.zoom = 1 + data.range(1.8 / 3, 1 / 3) / 3;
+    children[6].material.grayscale = 1 - data.range(1.6 / 3, 1 / 3);
   });
 
   return (
