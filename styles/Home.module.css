@@ -1,3 +1,10 @@
 .heroContainer {
   height: 100vh;
 }
+
+.nonHeroContainer {
+  width: 100%;
+  position: absolute;
+  top: 100vh;
+  scroll-behavior: smooth;
+}

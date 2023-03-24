@@ -1,0 +1,31 @@
+[
+  {
+    "id": "ralf",
+    "name": "Ralf Lampl",
+    "designation": "CEO",
+    "thumb": "./images/ralf.png",
+    "socials": [
+      { "id": "ralf", "username": "LucasGoldner", "media": "facebook" }
+    ]
+  },
+  {
+    "id": "tim",
+    "name": "Tim Baumgartner",
+    "designation": "CFO",
+    "thumb": "./images/tim.png",
+    "socials": [
+      { "id": "tim", "username": "LucasGoldner", "media": "facebook" }
+    ]
+  },
+  {
+    "id": "lucas",
+    "name": "Lucas Goldner",
+    "designation": "CTO",
+    "thumb": "./images/lucas.jpeg",
+    "socials": [
+      { "id": "lucas", "username": "LucasGoldner", "media": "facebook" },
+      { "id": "lucas", "username": "LucasGoldner", "media": "twitter" },
+      { "id": "lucas", "username": "LucasGoldner", "media": "linkedin" }
+    ]
+  }
+]

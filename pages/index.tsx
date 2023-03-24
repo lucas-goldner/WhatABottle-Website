@@ -1,6 +1,8 @@
 import Head from "next/head";
+import "font-awesome/css/font-awesome.min.css";
 import Hero from "../components/_sections/hero";
 import styles from "../styles/Home.module.css";
+import Team from "../components/_sections/team";
 
 const Home = () => {
   return (
@@ -13,6 +15,9 @@ const Home = () => {
       </Head>
       <div className={styles.heroContainer}>
         <Hero />
+      </div>
+      <div className={styles.nonHeroContainer}>
+        <Team />
       </div>
     </>
   );
