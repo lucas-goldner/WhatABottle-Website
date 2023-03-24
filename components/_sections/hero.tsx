@@ -7,6 +7,7 @@ import {
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import HoveringImages from "../hero/HoveringImages";
+import styles from "../../styles/Hero.module.css";
 
 const Hero = () => {
   return (
@@ -19,22 +20,9 @@ const Hero = () => {
             <HoveringImages />
           </Scroll>
           <Scroll html>
-            <h1 style={{ position: "absolute", top: "60vh", left: "0.5em" }}>
-              What
-            </h1>
-            <h1 style={{ position: "absolute", top: "120vh", left: "60vw" }}>
-              a
-            </h1>
-            <h1
-              style={{
-                position: "absolute",
-                top: "198.5vh",
-                left: "0.5vw",
-                fontSize: "40vw",
-              }}
-            >
-              bottle
-            </h1>
+            <h1 id={styles.heroTitle}>What</h1>
+            <h1 id={styles.aTitle}>a</h1>
+            <h1 id={styles.bottleTitle}>bottle</h1>
           </Scroll>
         </ScrollControls>
         <Preload />
