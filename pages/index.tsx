@@ -1,6 +1,6 @@
-import styles from "@/styles/Home.module.css";
 import Head from "next/head";
-import Hero from "./hero";
+import Hero from "../components/_sections/hero";
+import styles from "../styles/Home.module.css";
 
 const Home = () => {
   return (
@@ -11,9 +11,9 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <div className={styles.heroContainer}>
         <Hero />
-      </main>
+      </div>
     </>
   );
 };

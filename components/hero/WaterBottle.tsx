@@ -22,7 +22,7 @@ export const WaterBottle = (props: JSX.IntrinsicElements["group"]) => {
         Math.sin(t / 4) / 8,
         -0.2 - (1 + Math.sin(t / 1.5)) / 20
       );
-      ref.current.position.y = (1 + Math.sin(t / 1.5)) / 10;
+      ref.current.position.y = (-80 + Math.sin(t / 1.5)) / 10;
     }
   });
 
