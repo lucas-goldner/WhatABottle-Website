@@ -92,7 +92,7 @@
 @media screen and (max-width: 1024px) {
   #aboutContainer {
     flex-direction: column-reverse;
-    margin-top: 100rem;
+    margin-top: 90rem;
     margin-bottom: 5;
     padding-left: 2rem;
     padding-right: 2rem;

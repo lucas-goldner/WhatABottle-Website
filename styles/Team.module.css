@@ -98,4 +98,15 @@
   .teamMembers {
     flex-direction: column;
   }
+
+  .teamSectionTitle {
+    font-size: 8rem;
+    line-height: 8rem;
+    text-align: center;
+  }
+
+  .memberImg {
+    width: 100%;
+    object-fit: cover;
+  }
 }
