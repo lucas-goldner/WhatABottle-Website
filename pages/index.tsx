@@ -3,6 +3,7 @@ import "font-awesome/css/font-awesome.min.css";
 import Hero from "../components/_sections/hero";
 import styles from "../styles/Home.module.css";
 import Team from "../components/_sections/team";
+import About from "../components/_sections/about";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       </div>
       <div className={styles.nonHeroContainer}>
         <Team />
+        <About />
       </div>
     </>
   );

@@ -1,0 +1,116 @@
+#aboutContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15rem;
+  padding-right: 10rem;
+}
+
+#aboutTitle {
+  font-size: 2.5rem;
+}
+
+#videoThumb {
+  height: 25rem;
+  width: 40rem;
+}
+
+#aboutText {
+  padding-right: 5rem;
+  word-wrap: break-word;
+  max-width: 100%;
+  font-weight: 500;
+  line-height: 1.58;
+  font-size: 0.8rem;
+}
+
+#moreDetails {
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#moreDetails:hover {
+  color: #f8a440;
+}
+
+#moreDetailsArror {
+  color: #f8a440;
+  margin-left: 2rem;
+}
+
+#videoContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#videoPlayButton {
+  display: block;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  background: #f8a440;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0);
+}
+
+#videoPlayButton::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-6px, -9px);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 15px solid #fff;
+}
+
+#videoPlayButton:hover {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+#aboutDetails {
+  margin-left: 5rem;
+}
+
+.playIcon {
+  color: white;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  #aboutContainer {
+    flex-direction: column-reverse;
+    margin-top: 100rem;
+    margin-bottom: 5;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #aboutDetails {
+    margin-left: 0rem;
+  }
+
+  #videoThumb {
+    height: 20rem;
+    width: 100%;
+    margin-right: 0rem;
+    margin-top: 2.5rem;
+    object-fit: contain;
+  }
+
+  #aboutText {
+    padding-right: 0rem;
+  }
+}
