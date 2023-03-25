@@ -16,3 +16,25 @@
   left: 0.5vw;
   font-size: 40vw;
 }
+
+@media screen and (max-width: 1024px) {
+  #heroTitle {
+    position: absolute;
+    top: 50vh;
+    left: 0em;
+    font-size: 10rem;
+  }
+
+  #aTitle {
+    position: absolute;
+    top: 120vh;
+    left: 50vw;
+  }
+
+  #bottleTitle {
+    position: absolute;
+    top: 198.5vh;
+    left: 0.5vw;
+    font-size: 40vw;
+  }
+}

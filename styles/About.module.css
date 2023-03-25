@@ -25,11 +25,12 @@
   font-weight: 500;
   line-height: 1.58;
   font-size: 0.8rem;
+  max-width: 35rem;
 }
 
 #moreDetails {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.8rem;
   color: #222;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
