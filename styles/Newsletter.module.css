@@ -1,0 +1,80 @@
+#newsLetterContainer {
+  background: #f8a440;
+  background-image: url("/images/Subscribe.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newsLetterContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+}
+
+#singUptext {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0rem;
+  line-height: 1.23rem;
+  margin: 2rem;
+}
+
+#contactBox {
+  position: relative;
+}
+
+#contactInput {
+  color: #777;
+  border-color: #eee;
+  background-color: #fff;
+  width: 100%;
+  outline: none;
+  border: 1px solid #eee;
+  border-radius: 0;
+  padding: 3px 20px;
+  height: 62px;
+  padding-right: 27.5rem;
+}
+
+#sendEmailButton {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  border: 0 none;
+  background: transparent;
+  transition: 0.4s;
+  color: #f8a440;
+  width: auto;
+  height: 100%;
+  padding: 0 22px;
+}
+
+#sendEmailButton:hover {
+  color: white;
+  background-color: #f8a440;
+}
+
+@media screen and (max-width: 1024px) {
+  #newsLetterContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contactInput {
+    padding-right: 10rem;
+  }
+
+  #singUptext {
+    line-height: 2rem;
+  }
+}

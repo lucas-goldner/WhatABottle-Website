@@ -4,6 +4,8 @@ import Hero from "../components/_sections/hero";
 import styles from "../styles/Home.module.css";
 import Team from "../components/_sections/team";
 import About from "../components/_sections/about";
+import NewsLetter from "../components/_sections/newsletter";
+import Footer from "../components/_sections/footer";
 
 const Home = () => {
   return (
@@ -20,6 +22,8 @@ const Home = () => {
       <div className={styles.nonHeroContainer}>
         <Team />
         <About />
+        <NewsLetter />
+        <Footer />
       </div>
     </>
   );

@@ -1,0 +1,161 @@
+#footerContainer {
+  background: #000000;
+  margin: 0;
+  overflow: auto;
+  color: white;
+  cursor: url("/cursor_white.svg"), auto;
+}
+
+#footerUpperContent {
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#questionsTitle {
+  font-size: 2rem;
+  margin-left: 10rem;
+}
+
+#contactText {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  color: #fff;
+  border-bottom-color: rgba(0, 0, 0, 0);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+#contactContainer {
+  margin-right: 20rem;
+}
+
+.contactAddress {
+  margin-bottom: 0;
+  word-wrap: break-word;
+  max-width: 100%;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#socialLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.socialIcon {
+  color: white;
+  margin-right: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#contactMailsContainer {
+  color: white;
+  margin-left: 10rem;
+}
+
+.contactMails {
+  margin-bottom: 0;
+  word-wrap: break-word;
+  max-width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  position: relative;
+}
+
+.contactText {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+#lowerContentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 1rem 5rem;
+}
+
+#copyrightText {
+  margin: 0rem;
+  margin-right: 5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 2;
+  font-family: var(--ff-heading);
+  color: #ffffff;
+}
+
+#heart {
+  color: #dc3545;
+}
+
+#otherLinksContainer {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
+
+.otherLinksText {
+  color: white;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  #footerUpperContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #questionsTitle {
+    font-size: 2rem;
+    margin-left: 0rem;
+  }
+
+  #contactContainer {
+    margin-right: 0rem;
+  }
+
+  .contactAddress {
+    flex-direction: column;
+  }
+
+  #contactMailsContainer {
+    margin-left: 0rem;
+  }
+
+  #socialLinks {
+    margin-top: 2rem;
+  }
+
+  #lowerContentContainer {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem;
+  }
+
+  #otherLinksContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .otherLinksText {
+    margin-left: -1.5rem;
+  }
+
+  #copyrightText {
+    margin-right: 0rem;
+  }
+}

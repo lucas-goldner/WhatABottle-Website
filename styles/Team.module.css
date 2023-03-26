@@ -8,7 +8,7 @@
 }
 
 .teamSectionTitle {
-  font-size: 15em;
+  font-size: 12em;
   font-weight: 400;
   letter-spacing: -0.05em;
   line-height: 0.7em;
@@ -108,5 +108,9 @@
   .memberImg {
     width: 100%;
     object-fit: cover;
+  }
+
+  .memberContainer {
+    padding: 0px;
   }
 }

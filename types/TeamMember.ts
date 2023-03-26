@@ -1,8 +1,4 @@
-type Social = {
-  id: string;
-  username: string;
-  media: string;
-};
+import { Social } from "./Social";
 
 export type TeamMember = {
   id: string;
