@@ -5,7 +5,12 @@
     "designation": "CEO",
     "thumb": "./images/ralf.png",
     "socials": [
-      { "id": "ralf", "username": "LucasGoldner", "media": "facebook" }
+      {
+        "id": "ralf",
+        "username": "LucasGoldner",
+        "media": "linkedin",
+        "url": "https://www.linkedin.com/in/ralf-lampl-747070257/?originalSubdomain=de"
+      }
     ]
   },
   {
@@ -14,7 +19,12 @@
     "designation": "CFO",
     "thumb": "./images/tim.png",
     "socials": [
-      { "id": "tim", "username": "LucasGoldner", "media": "facebook" }
+      {
+        "id": "tim",
+        "username": "tbmgrtnr",
+        "media": "linkedin",
+        "url": "https://www.linkedin.com/in/tbmgrtnr/"
+      }
     ]
   },
   {
@@ -23,9 +33,18 @@
     "designation": "CTO",
     "thumb": "./images/lucas.jpeg",
     "socials": [
-      { "id": "lucas", "username": "LucasGoldner", "media": "facebook" },
-      { "id": "lucas", "username": "LucasGoldner", "media": "twitter" },
-      { "id": "lucas", "username": "LucasGoldner", "media": "linkedin" }
+      {
+        "id": "lucas",
+        "username": "LucasGoldner",
+        "media": "twitter",
+        "url": "https://twitter.lucas-goldner.com"
+      },
+      {
+        "id": "lucas",
+        "username": "LucasGoldner",
+        "media": "linkedin",
+        "url": "https://www.linkedin.com/in/lucas-goldner/"
+      }
     ]
   }
 ]

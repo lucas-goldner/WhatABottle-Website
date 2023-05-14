@@ -15,7 +15,7 @@ const Hero = () => {
       <fog attach="fog" args={["#3f7b9d", 25, 35]} />
       <ambientLight intensity={1.5} />
       <Suspense fallback={null}>
-        <ScrollControls damping={0.3} pages={3}>
+        <ScrollControls damping={0.1} pages={3}>
           <Scroll>
             <HoveringImages />
           </Scroll>

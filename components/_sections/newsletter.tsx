@@ -11,6 +11,14 @@ const NewsLetter = () => {
           <NewsletterForm />
         </div>
       </div>
+      <p id={styles.newsLetterExplanation}>
+        Subscribe to our Newsletter and stay up to date with the latest
+        developments. You'll be one of the first to know about new features,
+        special promotions, and exclusive discounts, including a 20% discount on
+        your first What-a-bottle purchase. So what are you waiting for? Join the
+        hydration revolution today with What-a-bottle, and take your first step
+        towards a healthier, more sustainable lifestyle.
+      </p>
     </div>
   );
 };

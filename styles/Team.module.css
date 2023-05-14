@@ -14,6 +14,7 @@
   line-height: 0.7em;
   margin: 0;
   padding: 0;
+  color: #0a2e52;
 }
 
 .teamMembers {
@@ -23,26 +24,26 @@
 }
 
 .memberContainer {
-  padding: 10px;
+  padding: 20px;
 }
 
 .memberImg {
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .member {
   border-radius: inherit;
-  padding: 30px;
+  padding: 20px;
   background-blend-mode: multiply;
   background-size: cover;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   position: relative;
-  background-color: #f8a440;
+  background-color: #bf0029;
 }
 
 .member:hover {
-  background-color: #0038e3;
+  background-color: #0a2e52;
 }
 
 .socials {

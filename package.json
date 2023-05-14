@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/parallax": "^9.7.2",
     "@react-three/drei": "^9.58.2",
     "@react-three/fiber": "^8.12.0",
     "font-awesome": "^4.7.0",

@@ -17,7 +17,7 @@ const Member = (data: TeamMember) => {
           {data.socials.map((social) => (
             <li key={social.id} className={social.media}>
               <a
-                href={`https://${social.media}.com/${social.username}`}
+                href={social.url}
                 className={styles.socialIcon}
                 aria-label={social.media}
               >

@@ -1,0 +1,80 @@
+.featuresContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.featuresTextContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.actualImage {
+  margin-top: -4rem;
+  z-index: 1;
+  position: absolute;
+}
+
+.randomBox {
+  position: absolute;
+  width: 5rem;
+  height: 10rem;
+  z-index: 2;
+  margin-left: -2rem;
+}
+
+.otherRandomBox {
+  position: absolute;
+  width: 5rem;
+  height: 10rem;
+  z-index: 2;
+  margin-left: 24rem;
+  margin-top: 8rem;
+}
+
+.featureTitle {
+  font-size: 2rem;
+  color: #0a2e52;
+}
+
+.featureText {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .featuresContainer {
+    flex-direction: column;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .featuresTextContainer {
+  }
+
+  .actualImage {
+    position: relative;
+  }
+
+  .randomBox {
+    display: none;
+  }
+
+  .otherRandomBox {
+    display: none;
+  }
+
+  .featureTitle {
+  }
+
+  .featureText {
+  }
+}

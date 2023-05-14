@@ -7,4 +7,5 @@
   position: absolute;
   top: 100vh;
   scroll-behavior: smooth;
+  overflow-y: auto;
 }
