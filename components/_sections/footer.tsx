@@ -48,17 +48,17 @@ const Footer = () => {
       <div id={styles.lowerContentContainer}>
         <ul id={styles.otherLinksContainer}>
           <li>
-            <a className={styles.otherLinksText} href={"/blog"}>
+            <a className={styles.otherLinksText} href={""}>
               Home
             </a>
           </li>
           <li>
-            <a className={styles.otherLinksText} href={"/portfolio"}>
-              Terms Of Service
+            <a className={styles.otherLinksText} href={"/impress"}>
+              Impress
             </a>
           </li>
           <li>
-            <a className={styles.otherLinksText} href={"/contact"}>
+            <a className={styles.otherLinksText} href={"/privacy-policy"}>
               Privacy Policy
             </a>
           </li>
