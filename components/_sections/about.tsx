@@ -1,13 +1,25 @@
+import { useEffect, useState } from "react";
 import styles from "../../styles/About.module.css";
 import Image from "next/image";
+import { useWindowSize } from "../../hooks/useWindowSize";
 
 const About = () => {
+  const size = useWindowSize();
+  const [imageWidth, setImageWidth] = useState(0);
+
+  useEffect(() => {
+    if (size.width != undefined) {
+      size.width >= 1024 ? setImageWidth(450) : setImageWidth(size.width);
+    }
+  }, [size]);
+
   return (
     <div id={styles.aboutContainer}>
       <Image
-        alt="LOL"
+        alt="Placeholder"
         src={"/images/bottleInAction.jpeg"}
-        width={400}
+        id={styles.aboutImage}
+        width={imageWidth}
         height={300}
       />
       <div id={styles.aboutDetails}>

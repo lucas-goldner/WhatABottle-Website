@@ -90,7 +90,15 @@
   font-size: 1rem;
 }
 
+#aboutImage {
+  margin-top: 0rem;
+}
+
 @media screen and (max-width: 1024px) {
+  #aboutImage {
+    margin-top: 3rem;
+  }
+
   #aboutContainer {
     flex-direction: column-reverse;
     margin-top: 90rem;

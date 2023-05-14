@@ -38,7 +38,7 @@ const Footer = () => {
               <a
                 className={styles.socialIcon}
                 key={social.id}
-                href={`https://${social.media}.com/${social.username}`}
+                href={social.url}
               >
                 <i className={`fa fa-${social.media}`} />
               </a>
