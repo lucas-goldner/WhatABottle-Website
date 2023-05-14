@@ -1,6 +1,4 @@
 import styles from "../../styles/Footer.module.css";
-import socials from "../../assets/data/socials.json";
-import { Social } from "../../types/Social";
 
 const Footer = () => {
   return (
@@ -33,7 +31,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div id={styles.socialLinks}>
+          {/* <div id={styles.socialLinks}>
             {socials.map((social: Social) => (
               <a
                 className={styles.socialIcon}
@@ -43,7 +41,7 @@ const Footer = () => {
                 <i className={`fa fa-${social.media}`} />
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
 
