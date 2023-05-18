@@ -4,8 +4,8 @@
   margin-bottom: 10rem;
   justify-content: space-between;
   align-items: center;
-  margin-left: 20rem;
-  margin-right: 20rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
 }
 
 .featuresTextContainer {
@@ -57,9 +57,6 @@
     margin-right: 0rem;
   }
 
-  .featuresTextContainer {
-  }
-
   .actualImage {
     position: relative;
   }
@@ -71,10 +68,11 @@
   .otherRandomBox {
     display: none;
   }
+}
 
-  .featureTitle {
-  }
-
-  .featureText {
+@media screen and (min-width: 1536px) {
+  .featuresContainer {
+    margin-left: 20rem;
+    margin-right: 20rem;
   }
 }
